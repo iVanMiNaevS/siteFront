@@ -41,7 +41,7 @@ function displayProducts(products) {
         
        card.innerHTML = `
     <div class="product-image">
-        <img src="http://localhost:3000${product.image}" alt="${product.name}" loading="lazy"> 
+        <img src="${API_URL}${product.image}" alt="${product.name}" loading="lazy"> 
     </div>
             <div class="product-title">${product.name}</div>
             <div class="product-price">${product.price.toLocaleString()} ₽</div>
@@ -260,7 +260,7 @@ async function loadProductPage() {
       
             const imageContainer = document.getElementById('product-image-container');
             if (imageContainer) {
-                const imageUrl = `http://localhost:3000${product.image}`;
+                const imageUrl = `${API_URL}${product.image}`;
                 imageContainer.innerHTML = `<img src="${imageUrl}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">`;
             }
             
