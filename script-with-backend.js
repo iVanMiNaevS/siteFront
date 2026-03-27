@@ -1,5 +1,6 @@
 
 const API_URL = 'https://siteback-ptou.onrender.com/api';
+const BACK_URL = 'https://siteback-ptou.onrender.com/'
 
 let currentUser = JSON.parse(localStorage.getItem('currentUser')) || null;
 function showNotification(message, type = 'success') {
