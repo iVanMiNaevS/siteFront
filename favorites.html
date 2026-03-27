@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeStore - Избранное</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">ShoeStore</a>
+        </div>
+        <div class="nav">
+            <a href="index.html">Главная</a>
+            <a href="login.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+            <a href="profile.html">Профиль</a>
+            <a href="favorites.html" class="active">Избранное <span id="favorites-count" class="item-count">0</span></a>
+            <a href="cart.html">Корзина <span id="cart-count" class="item-count">0</span></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Избранные товары</h2>
+        <div id="favorites-container"></div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 ShoeStore - Магазин обуви. Все права защищены.</p>
+    </div>
+
+    <script src="script-with-backend.js"></script>
+</body>
+</html>
