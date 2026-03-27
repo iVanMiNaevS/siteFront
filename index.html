@@ -1,52 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoeStore - Главная</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-        <div class="logo">
-            <a href="index.html">ShoeStore</a>
-        </div>
-        <div class="nav">
-            <a href="index.html" class="active">Главная</a>
-            <a href="login.html">Вход</a>
-            <a href="register.html">Регистрация</a>
-            <a href="profile.html">Профиль</a>
-            <a href="favorites.html">Избранное <span id="favorites-count" class="item-count" style="display: none;">0</span></a>
-            <a href="cart.html">Корзина <span id="cart-count" class="item-count" style="display: none;">0</span></a>
-        </div>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ShoeStore - Главная</title>
+		<meta
+			name="description"
+			content="ShoeStore — интернет-магазин кроссовок и обуви. Найдите стильные и удобные кроссовки Nike, Adidas и других брендов по выгодным ценам с быстрой доставкой."
+		/>
+		<meta property="og:title" content="ShoeStore — магазин кроссовок" />
+		<meta property="og:description" content="Кроссовки Nike, Adidas и другие бренды с доставкой." />
+		<meta property="og:url" content="https://ivanminaevs.github.io/siteFront/" />
+		<meta property="og:type" content="website" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<a href="index.html">ShoeStore</a>
+			</div>
+			<div class="nav">
+				<a href="index.html" class="active">Главная</a>
+				<a href="login.html">Вход</a>
+				<a href="register.html">Регистрация</a>
+				<a href="profile.html">Профиль</a>
+				<a href="favorites.html"
+					>Избранное <span id="favorites-count" class="item-count" style="display: none">0</span></a
+				>
+				<a href="cart.html"
+					>Корзина <span id="cart-count" class="item-count" style="display: none">0</span></a
+				>
+			</div>
+		</div>
 
-    <div class="container">
-        <div class="search-section">
-            <div class="search-box">
-                <label>Поиск товаров:</label>
-                <input type="text" id="search-input" placeholder="Введите название обуви...">
-            </div>
-            <div class="filter-box">
-                <label>Фильтр по категории:</label>
-                <select id="filter-select">
-                    <option value="all">Все категории</option>
-                    <option value="sneakers">Кроссовки</option>
-                    <option value="boots">Ботинки</option>
-                    <option value="shoes">Туфли</option>
-                    <option value="sandals">Сандалии</option>
-                </select>
-            </div>
-        </div>
+		<div class="container">
+			<div class="search-section">
+				<div class="search-box">
+					<label>Поиск товаров:</label>
+					<input type="text" id="search-input" placeholder="Введите название обуви..." />
+				</div>
+				<div class="filter-box">
+					<label>Фильтр по категории:</label>
+					<select id="filter-select">
+						<option value="all">Все категории</option>
+						<option value="sneakers">Кроссовки</option>
+						<option value="boots">Ботинки</option>
+						<option value="shoes">Туфли</option>
+						<option value="sandals">Сандалии</option>
+					</select>
+				</div>
+			</div>
 
-        <h2>Наши товары</h2>
-        <div id="products-grid" class="products-grid"></div>
-    </div>
+			<h2>Наши товары</h2>
+			<div id="products-grid" class="products-grid"></div>
+		</div>
 
-    <div class="footer">
-        <p>&copy; 2024 ShoeStore - Магазин обуви. Все права защищены.</p>
-    </div>
+		<div class="footer">
+			<p>&copy; 2024 ShoeStore - Магазин обуви. Все права защищены.</p>
+		</div>
 
-   <script src="script-with-backend.js"></script>
-</body>
+		<script src="script-with-backend.js"></script>
+	</body>
 </html>
