@@ -42,7 +42,7 @@ function displayProducts(products) {
         
        card.innerHTML = `
     <div class="product-image">
-        <img src="${API_URL}${product.image}" alt="${product.name}" loading="lazy"> 
+        <img src="${BACK_URL}${product.image}" alt="${product.name}" loading="lazy"> 
     </div>
             <div class="product-title">${product.name}</div>
             <div class="product-price">${product.price.toLocaleString()} ₽</div>
